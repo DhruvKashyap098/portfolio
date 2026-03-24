@@ -18,6 +18,7 @@ import {
 
 import { SectionHeading } from "@/components/portfolio/section-heading";
 import { SkillMarquee } from "@/components/portfolio/skill-marquee";
+import { SiteHeader } from "@/components/portfolio/site-header";
 import { SpotlightCard } from "@/components/portfolio/spotlight-card";
 import { StaggeredText } from "@/components/portfolio/staggered-text";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -46,23 +47,7 @@ export default function Home() {
         <div className="absolute left-1/2 top-48 size-64 -translate-x-1/2 rounded-full bg-amber-300/20 blur-3xl animate-pulse-glow" />
       </div>
 
-      <header className="page-shell sticky top-0 z-40 pt-4">
-        <div className="section-frame flex items-center justify-between gap-4 rounded-full px-4 py-3">
-          <a href="#home" className="flex items-center gap-3 text-sm font-semibold tracking-[0.18em] text-foreground/80 uppercase">
-            <span className="flex size-9 items-center justify-center rounded-full bg-primary text-primary-foreground">
-              DK
-            </span>
-            Dhruv Kumar
-          </a>
-          <nav className="hidden items-center gap-5 text-sm text-muted-foreground md:flex">
-            {portfolioData.navigation.map((item) => (
-              <a key={item.href} href={item.href} className="hover:text-foreground">
-                {item.label}
-              </a>
-            ))}
-          </nav>
-        </div>
-      </header>
+      <SiteHeader name={portfolioData.profile.name} navigation={portfolioData.navigation} />
 
       <section id="home" className="page-shell pt-10 sm:pt-14">
         <div className="mesh-grid section-frame grid gap-8 overflow-hidden px-6 py-8 sm:px-8 sm:py-10 lg:grid-cols-[1.15fr_0.85fr] lg:px-10">

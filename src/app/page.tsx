@@ -15,6 +15,7 @@ import {
   Sparkles,
   Trophy,
 } from "lucide-react";
+import Image from "next/image";
 
 import { SectionHeading } from "@/components/portfolio/section-heading";
 import { SkillMarquee } from "@/components/portfolio/skill-marquee";
@@ -22,7 +23,6 @@ import { SiteHeader } from "@/components/portfolio/site-header";
 import { SpotlightCard } from "@/components/portfolio/spotlight-card";
 import { StaggeredText } from "@/components/portfolio/staggered-text";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button-styles";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -122,24 +122,35 @@ export default function Home() {
           </div>
 
           <SpotlightCard className="rounded-[2rem] border-white/70 p-6 sm:p-8">
-            <div className="flex items-start justify-between gap-4">
-              <div className="flex items-center gap-4">
-                <Avatar className="size-16 rounded-3xl ring-1 ring-foreground/10">
-                  <AvatarFallback className="rounded-3xl bg-primary text-lg font-heading text-primary-foreground">
-                    DK
-                  </AvatarFallback>
-                </Avatar>
-                <div>
-                  <p className="font-heading text-2xl">{portfolioData.profile.name}</p>
-                  <p className="mt-1 text-sm text-muted-foreground">{portfolioData.profile.location}</p>
-                </div>
+            <div className="relative overflow-hidden rounded-[1.75rem] border border-white/60">
+              <Image
+                src="/dhruv-portrait.jpeg"
+                alt="Portrait of Dhruv Kumar"
+                width={768}
+                height={1024}
+                priority
+                className="h-80 w-full object-cover object-[center_20%]"
+              />
+              <div className="absolute inset-x-0 bottom-0 bg-linear-to-t from-slate-950/90 via-slate-950/45 to-transparent p-5">
+                <Badge className="rounded-full bg-white/15 text-white backdrop-blur">
+                  Featured Portrait
+                </Badge>
+                <p className="mt-4 font-heading text-2xl text-white">{portfolioData.profile.name}</p>
+                <p className="mt-1 text-sm text-white/80">{portfolioData.profile.role}</p>
+              </div>
+            </div>
+
+            <div className="mt-6 flex items-start justify-between gap-4">
+              <div>
+                <p className="font-mono text-xs uppercase tracking-[0.24em] text-muted-foreground">Based in</p>
+                <p className="mt-2 text-sm font-medium text-foreground/85">{portfolioData.profile.location}</p>
               </div>
               <Badge variant="secondary" className="rounded-full">
                 2023 - 2027
               </Badge>
             </div>
 
-            <p className="mt-6 text-sm leading-7 text-muted-foreground">
+            <p className="mt-4 text-sm leading-7 text-muted-foreground">
               {portfolioData.profile.summary}
             </p>
 

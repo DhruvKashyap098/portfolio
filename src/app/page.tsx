@@ -133,7 +133,7 @@ export default function Home() {
               />
               <div className="absolute inset-x-0 bottom-0 bg-linear-to-t from-slate-950/90 via-slate-950/45 to-transparent p-5">
                 <Badge className="rounded-full bg-white/15 text-white backdrop-blur">
-                  Featured Portrait
+                  This is me
                 </Badge>
                 <p className="mt-4 font-heading text-2xl text-white">{portfolioData.profile.name}</p>
                 <p className="mt-1 text-sm text-white/80">{portfolioData.profile.role}</p>
@@ -204,8 +204,8 @@ export default function Home() {
       <section id="about" className="page-shell mt-20">
         <SectionHeading
           eyebrow="About"
-          title="A learner-first builder with strong fundamentals and real project momentum."
-          description="This portfolio translates your resume into a cleaner narrative: who you are, what you know, and where you are heading next."
+          title="I'm a learner-first builder who cares about strong fundamentals and real progress."
+          description="This section is a quick introduction to how I think, what I'm learning, and the direction I'm growing in as a developer."
         />
 
         <div className="mt-8 grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
@@ -213,9 +213,9 @@ export default function Home() {
             <CardHeader className="px-6 pt-6 sm:px-8 sm:pt-8">
               <Badge variant="secondary" className="w-fit rounded-full">
                 <NotebookPen className="size-3.5" />
-                Brief Summary
+                My Story
               </Badge>
-              <CardTitle className="pt-3 text-2xl">Focused on practical software, not just coursework.</CardTitle>
+              <CardTitle className="pt-3 text-2xl">I&apos;m focused on building practical software, not only studying theory.</CardTitle>
               <CardDescription className="max-w-2xl leading-7">
                 {portfolioData.about.longForm}
               </CardDescription>
@@ -237,7 +237,7 @@ export default function Home() {
                 <h3 className="font-heading text-xl">What I&apos;m building with</h3>
               </div>
               <p className="mt-4 text-sm leading-7 text-muted-foreground">
-                Your strongest current stack comes from a mix of web basics, programming foundations, and desktop app experimentation.
+                Right now, I work most comfortably with a mix of web fundamentals, programming basics, and hands-on experimentation with desktop applications.
               </p>
               <div className="mt-5 flex flex-wrap gap-2">
                 {portfolioData.focusAreas.map((area) => (
@@ -251,10 +251,10 @@ export default function Home() {
             <SpotlightCard className="rounded-[2rem] border-white/70 p-6">
               <div className="flex items-center gap-3">
                 <CloudCog className="size-5 text-primary" />
-                <h3 className="font-heading text-xl">Current direction</h3>
+                <h3 className="font-heading text-xl">Where I&apos;m heading</h3>
               </div>
               <p className="mt-4 text-sm leading-7 text-muted-foreground">
-                You&apos;re positioned well for internships or junior roles that value curiosity, willingness to learn, and hands-on execution across web, Python, analytics, and cloud fundamentals.
+                I&apos;m aiming for internships and early opportunities where I can keep learning, contribute seriously, and grow through work across web development, Python, analytics, and cloud fundamentals.
               </p>
             </SpotlightCard>
           </div>
@@ -264,8 +264,8 @@ export default function Home() {
       <section id="skills" className="page-shell mt-20">
         <SectionHeading
           eyebrow="Skills"
-          title="A balanced toolkit across development, problem solving, and analytics."
-          description="The tabs below organize the strengths already present in your resume so recruiters can scan them quickly."
+          title="My toolkit is growing across development, problem solving, and analytics."
+          description="These are the tools and areas I'm currently learning, practicing, and building with."
         />
 
         <Tabs defaultValue={portfolioData.skillGroups[0].key} className="mt-8 gap-6">
@@ -301,8 +301,8 @@ export default function Home() {
       <section id="projects" className="page-shell mt-20">
         <SectionHeading
           eyebrow="Projects"
-          title="Proof of work that turns classroom knowledge into usable software."
-          description="Your resume currently lists one primary project, so the portfolio gives it more depth and presentation weight."
+          title="This is how I turn what I learn into something real and usable."
+          description="I'm still early in my journey, but this project shows how I take an idea, build it, and turn it into working software."
         />
 
         {portfolioData.projects.map((project) => (
@@ -344,7 +344,7 @@ export default function Home() {
               <div className="grid gap-4">
                 <Card className="rounded-[1.75rem] border-white/70 bg-white/65 py-0">
                   <CardHeader className="px-5 pt-5">
-                    <CardTitle>Core capabilities</CardTitle>
+                    <CardTitle>What I built into it</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-3 px-5 pb-5">
                     {project.highlights.map((highlight) => (
@@ -357,7 +357,7 @@ export default function Home() {
 
                 <Card className="rounded-[1.75rem] border-white/70 bg-linear-to-br from-sky-50/80 to-white py-0">
                   <CardHeader className="px-5 pt-5">
-                    <CardTitle>Why it matters</CardTitle>
+                    <CardTitle>Why I value this project</CardTitle>
                   </CardHeader>
                   <CardContent className="px-5 pb-5 text-sm leading-7 text-muted-foreground">
                     {project.whyItMatters}
@@ -372,8 +372,8 @@ export default function Home() {
       <section id="education" className="page-shell mt-20">
         <SectionHeading
           eyebrow="Education"
-          title="Academic progression with a clear focus on information technology."
-          description="This section keeps the timeline tight and easy to skim for recruiters who care about recency and momentum."
+          title="My academic path reflects where I'm coming from and where I'm heading."
+          description="Here's the academic foundation I'm building as I grow in information technology and software development."
         />
 
         <div className="mt-8 grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
@@ -381,7 +381,7 @@ export default function Home() {
             <CardHeader className="px-6 pt-6 sm:px-8 sm:pt-8">
               <div className="flex items-center gap-3">
                 <GraduationCap className="size-5 text-primary" />
-                <CardTitle className="text-2xl">Education Timeline</CardTitle>
+                <CardTitle className="text-2xl">My Education Timeline</CardTitle>
               </div>
             </CardHeader>
             <CardContent className="space-y-6 px-6 pb-6 sm:px-8 sm:pb-8">
@@ -406,7 +406,7 @@ export default function Home() {
             <CardHeader className="px-6 pt-6 sm:px-8 sm:pt-8">
               <div className="flex items-center gap-3">
                 <Trophy className="size-5 text-primary" />
-                <CardTitle className="text-2xl">Assessments & Certifications</CardTitle>
+                <CardTitle className="text-2xl">My Assessments & Certifications</CardTitle>
               </div>
             </CardHeader>
             <CardContent className="px-6 pb-6 sm:px-8 sm:pb-8">
@@ -445,11 +445,11 @@ export default function Home() {
             <div>
               <Badge variant="secondary" className="rounded-full">
                 <Languages className="size-3.5" />
-                Open to internships and collaborations
+                I&apos;m open to internships and collaborations
               </Badge>
-              <h2 className="mt-5 font-heading text-3xl sm:text-4xl">Let&apos;s turn learning into real-world work.</h2>
+              <h2 className="mt-5 font-heading text-3xl sm:text-4xl">Let&apos;s connect and build something meaningful.</h2>
               <p className="mt-4 max-w-2xl text-base leading-8 text-muted-foreground">
-                Reach out for internship opportunities, project collaboration, or a quick conversation about web development, Python applications, and growth as a developer.
+                If you have an internship opportunity, a project to collaborate on, or just want to talk about web development, Python, and growth, I&apos;d love to connect.
               </p>
             </div>
 
@@ -484,7 +484,7 @@ export default function Home() {
 
       <footer className="page-shell mt-10">
         <div className="flex flex-col items-center justify-between gap-3 border-t border-border/70 py-8 text-center text-sm text-muted-foreground sm:flex-row sm:text-left">
-          <p>Designed and developed in Next.js with shadcn/ui and custom animated components inspired by React Bits interaction patterns.</p>
+          <p>I built this portfolio in Next.js with shadcn/ui and custom animated components.</p>
           <p>{portfolioData.profile.name} | {portfolioData.profile.location}</p>
         </div>
       </footer>

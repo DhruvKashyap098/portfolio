@@ -1,5 +1,5 @@
 export const portfolioData = {
-  availability: "Actively seeking internship opportunities",
+  availability: "I'm currently looking for internship opportunities",
   navigation: [
     { label: "About", href: "#about" },
     { label: "Skills", href: "#skills" },
@@ -16,28 +16,28 @@ export const portfolioData = {
     github: "https://github.com/DhruvKashyap098",
     linkedin: "https://www.linkedin.com/in/dhruv-kashyap-a29546308/",
     summary:
-      "Dedicated and enthusiastic B.Tech. student at Haldia Institute of Technology with a strong foundation in HTML, CSS, JavaScript, Python, Java, and SQL, and a growing interest in practical web development.",
+      "I'm a B.Tech. Information Technology student at Haldia Institute of Technology, and I'm building my foundation across HTML, CSS, JavaScript, Python, Java, and SQL while growing through real projects and hands-on practice.",
   },
   hero: {
-    headline: "Building practical digital experiences while growing into a well-rounded developer.",
+    headline: "I'm building practical digital experiences while growing into a better developer every day.",
     subheading:
-      "I am an Information Technology student focused on turning fundamentals into useful software. From web technologies to Python desktop apps and cloud-oriented learning, I care about building things that solve real problems and sharpen my craft.",
+      "I enjoy turning what I learn into something useful. Whether it's web development, a Python desktop app, or learning more about analytics and cloud fundamentals, I want my work to solve real problems and help me keep improving.",
   },
   stats: [
     {
       label: "Graduation",
       value: "2027",
-      detail: "Currently pursuing B.Tech. in Information Technology at Haldia Institute of Technology.",
+      detail: "I'm currently pursuing my B.Tech. in Information Technology at Haldia Institute of Technology.",
     },
     {
       label: "CGPA",
       value: "6.92",
-      detail: "Academic foundation supported by consistent learning across programming and core IT subjects.",
+      detail: "This reflects the academic base I'm building while learning programming and core IT subjects.",
     },
     {
       label: "Simulations",
       value: "02",
-      detail: "Hands-on job simulations in data analytics and solutions architecture beyond coursework.",
+      detail: "I've completed hands-on simulations in data analytics and solutions architecture beyond my coursework.",
     },
   ],
   contactHighlights: [
@@ -76,22 +76,22 @@ export const portfolioData = {
   },
   about: {
     longForm:
-      "My journey is rooted in curiosity, consistency, and a willingness to learn. I enjoy strengthening my fundamentals in web development, programming, and problem solving, and I am looking for opportunities where I can contribute, learn from experienced teams, and keep growing professionally.",
+      "My journey is driven by curiosity, consistency, and a real willingness to learn. I like strengthening my fundamentals in web development, programming, and problem solving, and I'm looking for opportunities where I can contribute, learn from experienced people, and keep growing professionally.",
     highlights: [
       {
         title: "Web Development",
         description:
-          "Comfortable with HTML, CSS, and JavaScript, with a clear interest in building polished, user-friendly interfaces.",
+          "I enjoy working with HTML, CSS, and JavaScript, especially when I'm building interfaces that feel clean and easy to use.",
       },
       {
         title: "Programming Logic",
         description:
-          "Working across Python, Java, SQL, and data structures helps me approach problems with a practical engineering mindset.",
+          "Working with Python, Java, SQL, and data structures helps me think through problems in a more practical and structured way.",
       },
       {
         title: "Growth Mindset",
         description:
-          "I actively seek out simulations, projects, and hands-on practice to move beyond theory and gain industry-ready experience.",
+          "I actively look for simulations, projects, and hands-on practice so I can move beyond theory and gain real experience.",
       },
     ],
   },
@@ -115,15 +115,15 @@ export const portfolioData = {
       items: [
         {
           name: "HTML",
-          detail: "Strong markup fundamentals for building semantic page structures and web layouts.",
+          detail: "I use HTML to build clear, semantic page structures and solid front-end foundations.",
         },
         {
           name: "CSS",
-          detail: "Comfortable styling interfaces, handling layouts, and improving the overall presentation of web pages.",
+          detail: "I use CSS to style interfaces, manage layouts, and make web pages feel more polished.",
         },
         {
           name: "JavaScript",
-          detail: "Used for interactive behavior, dynamic logic, and front-end problem solving.",
+          detail: "I use JavaScript for interactivity, logic, and solving front-end problems in a more dynamic way.",
         },
       ],
     },
@@ -133,15 +133,15 @@ export const portfolioData = {
       items: [
         {
           name: "Python",
-          detail: "Applied in project work, including a desktop billing system built with Tkinter.",
+          detail: "I've used Python in my project work, including building a desktop billing system with Tkinter.",
         },
         {
           name: "Java",
-          detail: "Part of the core programming foundation developed through academic learning and practice.",
+          detail: "Java is part of the programming foundation I'm building through study and regular practice.",
         },
         {
           name: "SQL",
-          detail: "Useful for data handling, query thinking, and back-end fundamentals.",
+          detail: "I use SQL to strengthen my understanding of data handling, querying, and back-end basics.",
         },
       ],
     },
@@ -151,15 +151,15 @@ export const portfolioData = {
       items: [
         {
           name: "Data Structures & Algorithms",
-          detail: "Helps strengthen logic, efficiency, and structured problem solving.",
+          detail: "This helps me improve my logic, efficiency, and the way I approach problem solving.",
         },
         {
           name: "Power BI",
-          detail: "Used through the data analytics simulation to support business reporting and storytelling.",
+          detail: "I explored Power BI through my analytics simulation while working on reporting and data storytelling.",
         },
         {
           name: "AWS & Azure",
-          detail: "Introduced through solutions architecture simulation work focused on cloud basics and scalable hosting.",
+          detail: "I was introduced to AWS and Azure through solutions architecture work focused on cloud basics and scalable hosting.",
         },
       ],
     },
@@ -184,16 +184,16 @@ export const portfolioData = {
       badge: "Featured Project",
       teamSize: 1,
       summary:
-        "A Python-based desktop billing application built with Tkinter to streamline day-to-day retail billing workflows and make bill generation easier to manage.",
+        "I built this Python desktop billing application with Tkinter to make retail billing more organized, faster, and easier to manage.",
       stack: ["Python", "Tkinter"],
       link: "https://github.com/DhruvKashyap098/Billing_System",
       highlights: [
-        "Captures customer details and organizes billing information in one interface.",
-        "Calculates item-wise prices and tax values to reduce manual billing effort.",
-        "Generates bills that can be saved and retrieved when needed.",
+        "I added customer details handling so billing information could stay organized in one interface.",
+        "I implemented item-wise price and tax calculation to reduce manual billing effort.",
+        "I made it possible to generate, save, and retrieve bills when needed.",
       ],
       whyItMatters:
-        "This project shows practical ownership: taking Python fundamentals and applying them to a real desktop utility that solves a small but meaningful operational problem.",
+        "This project matters to me because it shows how I take Python fundamentals and turn them into a working desktop tool that solves a practical problem.",
     },
   ],
   education: [
@@ -220,17 +220,17 @@ export const portfolioData = {
     {
       slug: "genai-data-analytics",
       title: "GenAI Powered Data Analytics Job Simulation",
-      label: "Exploratory data analysis, AI-based risk profiling, and reporting practice.",
+      label: "How I practiced exploratory analysis, AI-based risk profiling, and reporting.",
       summary:
-        "Completed a GenAI-powered data analytics simulation with hands-on work in exploratory analysis, delinquency prediction, business reporting, and AI-driven collections strategy thinking.",
+        "In this simulation, I worked on exploratory analysis, delinquency prediction, business reporting, and AI-driven collections strategy thinking.",
       skills: ["Data Analytics", "Power BI", "PowerPoint", "Data Storytelling"],
     },
     {
       slug: "solutions-architecture",
       title: "Solutions Architecture Job Simulation",
-      label: "Cloud fundamentals, scalable hosting ideas, and technical translation.",
+      label: "How I practiced cloud fundamentals, scalable hosting ideas, and technical thinking.",
       summary:
-        "Completed a solutions architecture simulation focused on designing simple and scalable hosting architectures while translating business needs into technical decisions.",
+        "In this simulation, I focused on designing simple and scalable hosting architectures while translating business needs into technical decisions.",
       skills: ["AWS", "Azure", "SQL", "System Design"],
     },
   ],
